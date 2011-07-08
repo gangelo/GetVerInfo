@@ -1,0 +1,13 @@
+Old MFC C++ Windows App demo featuring class wrapper to retrieve win32 module information (VS_VERSION_INFO resource) 
+
+Environment:Win 95, Win 98 SE, NT4 SP3, Win 2000
+
+Yet another class to get all the VS_VERSION_INFO resource information you need, from any module!
+
+Many people have requested this code in response to reading some of my posts - well, here it is. You can optionally specify
+language id and code page, to query language specific VS_VERSION_INFO elements of the block - very helpful. You have the option
+of querying your own module information (many people have been confused as to how to do this). The code to get your own module name,
+I have included in a separate class (CVFXGetModuleName) so that you can use it separately (for whatever reason). The retrieved values, 
+are also returned in a separate class (CVFXVersionRes) making it easy to pass the retrieved information around as an object.
+
+Feel free to improve upon it if you find it lacking in any area - enjoy! 
